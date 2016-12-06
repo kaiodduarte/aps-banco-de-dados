@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="VBoxMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.TelaPrincipalController">
+    <children>
+        <MenuBar fx:id="menuBar01">
+            <menus>
+                <Menu fx:id="menuItem" mnemonicParsing="false" text="Cadastros">
+                    <items>
+                        <MenuItem fx:id="menuItemCadastrosCategorias" mnemonicParsing="false" onAction="#handleMenuItemCadastroCategorias" text="Categorias" />
+                        <MenuItem fx:id="menuItemCadastrosCompras" mnemonicParsing="false" onAction="#handleMenuItemCadastroCompras" text="Compras" />
+                        <MenuItem fx:id="menuItemCadastroLojas" mnemonicParsing="false" onAction="#handleMenuItemCadastroLojas" text="Lojas" />
+                        <MenuItem fx:id="menuItemCadastroProdutos" mnemonicParsing="false" onAction="#handleMenuItemCadastroProdutos" text="Produtos" />
+                    </items>
+                </Menu>
+                <Menu fx:id="menuComparar" mnemonicParsing="false" text="Comparar">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleMenuItemComparar" text="Comparar Produtos" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane fx:id="anchorPane" prefHeight="460.0" prefWidth="760.0" />
+    </children>
+</VBox>
