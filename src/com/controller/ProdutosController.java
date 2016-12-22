@@ -44,22 +44,22 @@ public class ProdutosController implements Initializable {
     private Label labelCategoria;
 
     @FXML
-    private TableColumn tableColumnID;
+    private TableColumn<Produto, Integer> tableColumnID;
 
     @FXML
-    private TableColumn tableColumnNome;
+    private TableColumn<Produto, String> tableColumnNome;
 
     @FXML
-    private TableColumn tableColumnMarca;
+    private TableColumn<Produto, String> tableColumnMarca;
 
     @FXML
-    private TableColumn tableColumnMedida;
+    private TableColumn<Produto, Double> tableColumnMedida;
 
     @FXML
-    private TableColumn tableColumnCategoria;
+    private TableColumn<Produto, String> tableColumnCategoria;
 
     @FXML
-    private TableView tableViewProdutos;
+    private TableView<Produto> tableViewProdutos;
 
     @FXML
     private Button buttonInserir;
@@ -82,7 +82,7 @@ public class ProdutosController implements Initializable {
         carregarTableViewProdutos();
 
         tableViewProdutos.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> selectItemTableViewProdutos((Produto) newValue));
+                (observable, oldValue, newValue) -> selectItemTableViewProdutos(newValue));
     }
 
     public void carregarTableViewProdutos() {

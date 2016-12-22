@@ -35,13 +35,13 @@ public class CategoriasController implements Initializable {
     private Label labelTipo;
 
     @FXML
-    private TableView tableViewCategorias;
+    private TableView<Categoria> tableViewCategorias;
 
     @FXML
-    private TableColumn tableColumnID;
+    private TableColumn<Categoria, Integer> tableColumnID;
 
     @FXML
-    private TableColumn tableColumnNome;
+    private TableColumn<Categoria, String> tableColumnNome;
 
     @FXML
     private Button buttonInserir;
@@ -64,7 +64,7 @@ public class CategoriasController implements Initializable {
         carregarTableViewCategorias();
 
         tableViewCategorias.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> selecionarItemTableViewCategorias((Categoria) newValue));
+                (observable, oldValue, newValue) -> selecionarItemTableViewCategorias(newValue));
     }
 
     public void carregarTableViewCategorias() {

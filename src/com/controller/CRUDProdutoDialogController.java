@@ -39,7 +39,7 @@ public class CRUDProdutoDialogController implements Initializable {
     private TextField textFieldMarca;
 
     @FXML
-    private ComboBox comboBoxCategoria;
+    private ComboBox<String> comboBoxCategoria;
 
     private Stage dialogStage;
     private boolean buttonConfirmarClicked = false;

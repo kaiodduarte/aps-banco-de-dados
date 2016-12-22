@@ -47,10 +47,10 @@ public class CRUDCompraDialogController implements Initializable {
     private TextField textFieldQuantidade;
 
     @FXML
-    private ComboBox comboBoxCategoria;
+    private ComboBox<String> comboBoxCategoria;
 
     @FXML
-    private ComboBox comboBoxLoja;
+    private ComboBox<String> comboBoxLoja;
 
     @FXML
     private DatePicker datePicker;

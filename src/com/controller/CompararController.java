@@ -64,7 +64,7 @@ public class CompararController implements Initializable {
     private Label labelData;
 
     @FXML
-    private ComboBox comboBoxCategoria;
+    private ComboBox<String> comboBoxCategoria;
 
     @FXML
     private Button buttonComparar;
